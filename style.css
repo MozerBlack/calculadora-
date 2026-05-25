@@ -39,6 +39,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    margin-bottom: 10px; /* Espaço para o botão de igual */
 }
 
 button {
@@ -66,10 +67,11 @@ button:hover {
 }
 
 .btn-igual {
+    width: 100%;
+    height: 55px;
     background-color: #00e676;
     color: #121214;
-    grid-column: span 4; /* Ocupa a linha inteira de baixo */
-    height: 55px;
+    border-radius: 8px;
 }
 
 .btn-igual:hover {
