@@ -57,7 +57,6 @@ button:hover {
     background-color: #323238;
 }
 
-/* Cores especiais para destacar os operadores */
 .btn-operador {
     color: #00e676;
 }
@@ -69,14 +68,10 @@ button:hover {
 .btn-igual {
     background-color: #00e676;
     color: #121214;
-    grid-row: span 2;
-    height: 130px;
+    grid-column: span 4; /* Ocupa a linha inteira de baixo */
+    height: 55px;
 }
 
 .btn-igual:hover {
     background-color: #00c864;
-}
-
-.btn-zero {
-    grid-column: span 2;
 }
