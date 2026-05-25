@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do Jean</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="calculadora">
+        <input type="text" id="resultado" readonly placeholder="0">
+
+        <div class="botoes">
+            <button onclick="limparVisor()" class="btn-limpar">C</button>
+            <button onclick="deletarUltimo()">⌫</button>
+            <button onclick="inserir('/')" class="btn-operador">/</button>
+            <button onclick="inserir('*')" class="btn-operador">*</button>
+
+            <button onclick="inserir('7')">7</button>
+            <button onclick="inserir('8')">8</button>
+            <button onclick="inserir('9')">9</button>
+            <button onclick="inserir('-')" class="btn-operador">-</button>
+
+            <button onclick="inserir('4')">4</button>
+            <button onclick="inserir('5')">5</button>
+            <button onclick="inserir('6')">6</button>
+            <button onclick="inserir('+')" class="btn-operador">+</button>
+
+            <button onclick="inserir('1')">1</button>
+            <button onclick="inserir('2')">2</button>
+            <button onclick="inserir('3')">3</button>
+            <button onclick="calcular()" class="btn-igual">=</button>
+
+            <button onclick="inserir('0')" class="btn-zero">0</button>
+            <button onclick="inserir('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
