@@ -9,36 +9,36 @@
 <body>
 
     <div class="calculadora">
-        <input type="text" id="resultado" readonly placeholder="0">
-
-        <div class="botoes">
-            <button onclick="limparVisor()" class="btn-limpar">C</button>
-            <button onclick="inserir('(')" class="btn-operador">(</button>
-            <button onclick="inserir(')')" class="btn-operador">)</button>
-            <button onclick="deletarUltimo()">⌫</button>
-
-            <button onclick="inserir('7')">7</button>
-            <button onclick="inserir('8')">8</button>
-            <button onclick="inserir('9')">9</button>
-            <button onclick="inserir('÷')" class="btn-operador">÷</button>
-
-            <button onclick="inserir('4')">4</button>
-            <button onclick="inserir('5')">5</button>
-            <button onclick="inserir('6')">6</button>
-            <button onclick="inserir('×')" class="btn-operador">×</button>
-
-            <button onclick="inserir('1')">1</button>
-            <button onclick="inserir('2')">2</button>
-            <button onclick="inserir('3')">3</button>
-            <button onclick="inserir('-')" class="btn-operador">-</button>
-
-            <button onclick="inserir('0')">0</button>
-            <button onclick="inserir('.')">.</button>
-            <button onclick="inserir('%')" class="btn-operador">%</button>
-            <button onclick="inserir('+')" class="btn-operador">+</button>
+        <div class="visor-container">
+            <input type="text" id="resultado" readonly placeholder="0">
         </div>
 
-        <button onclick="calcular()" class="btn-igual">=</button>
+        <div class="botoes">
+            <button onclick="limparVisor()" class="btn-top">C</button>
+            <button onclick="inserir('(')" class="btn-top">(</button>
+            <button onclick="inserir(')')" class="btn-top">)</button>
+            <button onclick="inserir('÷')" class="btn-operador">÷</button>
+
+            <button onclick="inserir('7')" class="btn-numero">7</button>
+            <button onclick="inserir('8')" class="btn-numero">8</button>
+            <button onclick="inserir('9')" class="btn-numero">9</button>
+            <button onclick="inserir('×')" class="btn-operador">×</button>
+
+            <button onclick="inserir('4')" class="btn-numero">4</button>
+            <button onclick="inserir('5')" class="btn-numero">5</button>
+            <button onclick="inserir('6')" class="btn-numero">6</button>
+            <button onclick="inserir('-')" class="btn-operador">-</button>
+
+            <button onclick="inserir('1')" class="btn-numero">1</button>
+            <button onclick="inserir('2')" class="btn-numero">2</button>
+            <button onclick="inserir('3')" class="btn-numero">3</button>
+            <button onclick="inserir('+')" class="btn-operador">+</button>
+
+            <button onclick="inserir('0')" class="btn-numero btn-zero">0</button>
+            <button onclick="inserir('.')" class="btn-numero">.</button>
+            <button onclick="inserir('%')" class="btn-numero">%</button>
+            <button onclick="calcular()" class="btn-operador">=</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
